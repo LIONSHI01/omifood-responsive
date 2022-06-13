@@ -68,6 +68,10 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+
+  /* KEYNOTE:for the mobile navigation, hidden the overflow menu, set on both html & body */
+  /* Only works if there is nothing absolutely in relation to body */
+  overflow-x: hidden;
 }
 
 body {
@@ -75,6 +79,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* KEYNOTE:for the mobile navigation, hidden the overflow menu, set on both html & body , x-direction*/
+  overflow-x: hidden;
 }
 
 /**************************/
