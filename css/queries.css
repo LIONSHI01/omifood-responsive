@@ -24,6 +24,7 @@ Instead , 1rem = 1em = 16px */
 @media (max-width: 75em) {
   /* KEYNOTE: scale down the ratio to shrink overall size  */
   html {
+    /* 9px / 16px = 56.25% */
     font-size: 56.25%;
   }
 
@@ -52,5 +53,19 @@ Instead , 1rem = 1em = 16px */
   }
   .testimonials-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px(Tablet)*/
+/**************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
   }
 }
