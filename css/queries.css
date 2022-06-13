@@ -203,3 +203,36 @@ Instead , 1rem = 1em = 16px */
     display: none;
   }
 }
+
+/**************************/
+/* BELOW 704px(Smaller tablets)*/
+/**************************/
+
+@media (max-width: 44em) {
+  html {
+    /* 7px / 16px = 50% */
+    font-size: 44%;
+  }
+
+  .heading-secondary {
+    margin-bottom: 3.6rem;
+  }
+
+  /* MEALS SECTION */
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  /* PRICING SECTION */
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+}
