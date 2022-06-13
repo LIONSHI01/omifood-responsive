@@ -65,6 +65,11 @@ Instead , 1rem = 1em = 16px */
     font-size: 50%;
   }
 
+  /* NAV */
+  .main-nav-list {
+    gap: 1.8rem;
+  }
+
   /* HERO SECTION */
   .hero {
     grid-template-columns: 1fr;
@@ -99,14 +104,26 @@ Instead , 1rem = 1em = 16px */
 
   /* MEALS SECTION */
 
+  .meal-attributes {
+    gap: 2.4rem;
+  }
   .meal-title {
     font-size: 1.8rem;
   }
   .meal-content {
-    padding: 3.2rem 2.4rem 2.4rem 2.4rem;
+    padding: 2.4rem 2.4rem 2.4rem 2.4rem;
   }
 
   .list {
     gap: 0.8rem;
+  }
+
+  /* TESTINMONIAL SECTION */
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
