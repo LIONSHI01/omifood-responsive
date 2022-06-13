@@ -126,4 +126,18 @@ Instead , 1rem = 1em = 16px */
   .gallery {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  /* CTA SECTION */
+  .cta {
+    /* 3/5 = 60% + 40% */
+    grid-template-columns: 60fr 40fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
 }
