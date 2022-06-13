@@ -65,7 +65,48 @@ Instead , 1rem = 1em = 16px */
     font-size: 50%;
   }
 
-  .main-nav-list {
-    gap: 3.2rem;
+  /* HERO SECTION */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  /* FEATURED IN SECTION */
+  .logos img {
+    height: 2.4rem;
+  }
+
+  /* HOW IT WORKS SECTION */
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  /* MEALS SECTION */
+
+  .meal-title {
+    font-size: 1.8rem;
+  }
+  .meal-content {
+    padding: 3.2rem 2.4rem 2.4rem 2.4rem;
+  }
+
+  .list {
+    gap: 0.8rem;
   }
 }
