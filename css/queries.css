@@ -235,4 +235,106 @@ Instead , 1rem = 1em = 16px */
   .pricing-plan {
     width: 100%;
   }
+
+  /* KEYNOTE: 
+  1) increase column number from 5 to 6
+  2) rearrange column position */
+
+  /* FOOTER */
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  /* KEYNOTE */
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+}
+
+/**************************/
+/* BELOW 550px(Mobile phone)*/
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    /* 6px / 16px = 37.5% */
+    /* font-size: 37.5%; */
+  }
+  .grid {
+    row-gap: 1.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  /* HERO SECTION */
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  /* HOW TO SECTION */
+  /* KEYNOTE: Rearrange image position
+  1) step-img-box:nth-child(2) 括號中 2 代表 Parent-element 的第二個child element,而step-img-box 代表該class所在的parent-element
+  */
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  /* TESTIMONIALS SECTION */
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    grid-row: 1;
+    height: 32rem;
+  }
+
+  .cta-text-box {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
 }
