@@ -265,10 +265,6 @@ Instead , 1rem = 1em = 16px */
 /**************************/
 
 @media (max-width: 34em) {
-  html {
-    /* 6px / 16px = 37.5% */
-    /* font-size: 37.5%; */
-  }
   .grid {
     row-gap: 1.8rem;
   }
@@ -279,6 +275,13 @@ Instead , 1rem = 1em = 16px */
     grid-template-columns: 1fr;
   }
 
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
   /* HERO SECTION */
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
@@ -301,6 +304,11 @@ Instead , 1rem = 1em = 16px */
     height: 1.2rem;
   }
 
+  /* FEATURED IN  SECTION*/
+  .section-featured {
+    padding: 4.8rem 0 0 0;
+  }
+
   /* HOW TO SECTION */
   /* KEYNOTE: Rearrange image position
   1) step-img-box:nth-child(2) 括號中 2 代表 Parent-element 的第二個child element,而step-img-box 代表該class所在的parent-element
@@ -316,16 +324,33 @@ Instead , 1rem = 1em = 16px */
     transform: translateY(2.4rem);
   }
 
+  /* MEALS SECTION */
+  .section-meals {
+    padding: 4.8rem 0;
+  }
+
+  .all-recipes .link {
+    font-size: 2.4rem;
+  }
+
   /* TESTIMONIALS SECTION */
   .testimonials {
     grid-template-columns: 1fr;
   }
-
+  .testimonials-container {
+    padding: 4.8rem 3.2rem;
+  }
   .gallery {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
   }
 
+  /* FEATURES SECTION */
+  .feature-icon {
+    transform: translateY(1.2rem);
+  }
+
+  /* CTA SECTION */
   .cta {
     grid-template-columns: 1fr;
   }
