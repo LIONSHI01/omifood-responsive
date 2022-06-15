@@ -24,6 +24,7 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="/js/script.js"></script>
 
     <title>Omnifood</title>
   </head>
@@ -41,9 +42,16 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+      <!-- KEYNOTE: Add mobile nav icons -->
       <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        <ion-icon
+          class="icon-mobile-nav mobile-open-btn"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          class="icon-mobile-nav mobile-close-btn"
+          name="close-outline"
+        ></ion-icon>
       </button>
     </header>
 
@@ -642,7 +650,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="address-col">
