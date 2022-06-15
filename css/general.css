@@ -72,6 +72,9 @@ html {
   /* KEYNOTE:for the mobile navigation, hidden the overflow menu, set on both html & body */
   /* Only works if there is nothing absolutely in relation to body */
   overflow-x: hidden;
+
+  /* KEYNOTE: For movement to anchor */
+  /* scroll-behavior: smooth; */
 }
 
 body {
