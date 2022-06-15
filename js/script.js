@@ -37,6 +37,29 @@ allLinks.forEach(function (link) {
   });
 });
 
+/////////////////////////////////////////////////////////
+//KEYNOTE:STICKY NAVIGATION
+const sectionHeroEl = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    // if Hero section is interseting with viewport -> remove / not add 'sticky' class; else , add 'sticky' class
+    if (!ent.isIntersecting) document.body.classList.add("sticky");
+    if (ent.isIntersecting) document.body.classList.remove("sticky");
+  },
+  {
+    // Set up observing conditions:
+    // In the viewport
+    root: null,
+    threshold: 0,
+    // make the threshold early
+    rootMargin: "-80px",
+  }
+);
+// Activate the observer function
+obs.observe(sectionHeroEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
