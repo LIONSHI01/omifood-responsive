@@ -1,9 +1,25 @@
-// Add copyright year in Footer
+console.log("Hello world!");
+
+const myName = "Jonas Schmedtmann";
+const h1 = document.querySelector(".heading-primary");
+console.log(myName);
+console.log(h1);
+
+// h1.addEventListener("click", function () {
+//   h1.textContent = myName;
+//   h1.style.backgroundColor = "red";
+//   h1.style.padding = "5rem";
+// });
+
+///////////////////////////////////////////////////////////
+// Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
-//Add Mobile Navigation
+///////////////////////////////////////////////////////////
+// Make mobile navigation work
+
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
@@ -11,9 +27,11 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-/////////////////////////////////////////////////////////
-//KEYNOTE:Smooth scrolling animation
+///////////////////////////////////////////////////////////
+// Smooth scrolling animation
+
 const allLinks = document.querySelectorAll("a:link");
+
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -26,38 +44,43 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
 
-    // Scroll to selected elements
+    // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
-      const selectEl = document.querySelector(href);
-      selectEl.scrollIntoView({ behavior: "smooth" });
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-    // Close mobile navigation
+
+    // Close mobile naviagtion
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
   });
 });
 
-/////////////////////////////////////////////////////////
-//KEYNOTE:STICKY NAVIGATION
+///////////////////////////////////////////////////////////
+// Sticky navigation
+
 const sectionHeroEl = document.querySelector(".section-hero");
+
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     console.log(ent);
-    // if Hero section is interseting with viewport -> remove / not add 'sticky' class; else , add 'sticky' class
-    if (!ent.isIntersecting) document.body.classList.add("sticky");
-    if (ent.isIntersecting) document.body.classList.remove("sticky");
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
   },
   {
-    // Set up observing conditions:
     // In the viewport
     root: null,
     threshold: 0,
-    // make the threshold early
     rootMargin: "-80px",
   }
 );
-// Activate the observer function
 obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////

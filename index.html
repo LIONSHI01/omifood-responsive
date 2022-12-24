@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- KEYNOTE: Always include this code -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Omnifood is an AI-powered food subscription that will make you eat healthy."
+      content="Project Omnifood is a landing page of a online health food delivery application. It is composed of Section Hero, Features, Application display, Meals introduction, Testimonials, Pricing and Call-For-Action. The page is fully responsive on desktop and mobile devices. "
     />
-    <link rel="icon" href="/img/favicon-sm.png" />
-    <!-- KEYNOTE: Add Apple iOS homescreen -->
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
-    <!-- KEYNOTE: Add Android homescreen -->
-    <link rel="manifest" href="/manifest.webmanifest" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -23,7 +21,7 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="/css/queries.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script
       type="module"
@@ -33,15 +31,21 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <script defer src="/js/script.js"></script>
 
-    <title>Omnifood &mdash; Never cook again!</title>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Stay Healthy with us | Omnifood</title>
   </head>
   <body>
     <header class="header">
       <a href="#">
         <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
       </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#how">How it works</a></li>
@@ -53,16 +57,10 @@
           <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
-      <!-- KEYNOTE: Add mobile nav icons -->
+
       <button class="btn-mobile-nav">
-        <ion-icon
-          class="icon-mobile-nav mobile-open-btn"
-          name="menu-outline"
-        ></ion-icon>
-        <ion-icon
-          class="icon-mobile-nav mobile-close-btn"
-          name="close-outline"
-        ></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
 
@@ -81,6 +79,7 @@
             <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
+
             <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -97,10 +96,9 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <!-- KEYNOTE: Use <picture> to let browser select the image that support and perform the best, webp has less file size ,should be better , but some browser doesn't support webp format -->
             <picture>
-              <source srcset="/img/hero.webp" type="image/webp" />
-              <source srcset="/img/hero-min.png" type="image/png" />
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
 
               <img
                 src="img/hero-min.png"
@@ -153,6 +151,7 @@
               matter what diet you follow!
             </p>
           </div>
+
           <div class="step-img-box">
             <img
               src="img/app/app-screen-1.png"
@@ -389,7 +388,6 @@
               alt="Photo of beautifully
             arranged food"
             />
-            <!-- <figcaption>Caption</figcaption> -->
           </figure>
           <figure class="gallery-item">
             <img
@@ -591,15 +589,15 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <!-- KEYNOTE: linke the form with Netlify server-->
+
               <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
-                    name="full-name"
                     placeholder="John Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -609,8 +607,8 @@
                   <input
                     id="email"
                     type="email"
-                    name="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
@@ -667,12 +665,18 @@
               ></a>
             </li>
           </ul>
-
-          <p class="copyright">
-            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
-            All rights reserved.
-          </p>
+          <div class="author">
+            <p class="copyright">
+              Copyright &copy; <span class="year">2023</span> by Lion SHI, Inc.
+              All rights reserved.
+            </p>
+            <p>
+              Welcome to visit other projects on
+              <a href="https://lionshi.io">https://lionshi.io</a>
+            </p>
+          </div>
         </div>
+
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
           <address class="contacts">
@@ -688,6 +692,7 @@
             </p>
           </address>
         </div>
+
         <nav class="nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
